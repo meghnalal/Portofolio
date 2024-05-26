@@ -16,7 +16,6 @@ const Image = () => {
     ScrollTrigger.create({
       trigger: imageRef.current,
       animation: anim,
-      markers: true,
       toggleActions: "restart none none reset",
     });
   }, []);
