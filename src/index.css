@@ -3,3 +3,81 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@keyframes slides {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 30px 0px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before, .logos:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.logo_items {
+  display: inline-block;
+  animation: 10s slides infinite linear;
+}
+
+.logos:hover .logo_items {
+  animation-play-state: paused;
+}
+
+.logo_items img{
+  height: 100px;
+  border: saddlebrown 2px;
+}
+
+.box{
+  height: 100px
+}
+
+.myImage {
+  animation: fade-in 2s linear, move 5s ease-in-out;
+}
+
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes move {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(100px); }
+  100% { transform: translateX(0); }
+}
+
+.main {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  gap: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.text {
+  flex: 1 0 100%;
+}

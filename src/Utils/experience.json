@@ -1,0 +1,38 @@
+[
+  {
+    "company": "JaguarLandRover",
+    "period": "Jan 2017 - Present",
+    "role": "Full Stack Software Developer",
+    "tasks": [
+      "Spearheaded the development of a cloud-based SAAS platform specializing in analyzed acquired ECU and sensor data from automotive systems.",
+      "Architected and implemented a responsive web interface enabling users to visualize and analyze real-time data from onboard ECUs and sensors.",
+      "Designed and integrated robust data acquisition pipelines, ensuring the seamless ingestion of diverse data sources into the cloud platform.",
+      "Implemented advanced analytics features, empowering users to derive insights and make data-driven decisions based on the measured data.",
+      "Guided best practices around inclusive design and accessible, semantic UI.",
+      "Mentored junior developers and helped new hires onboard and succeed."
+    ]
+  },
+  {
+    "company": "Lufthansa",
+    "period": "Jan 2017 - Present",
+    "role": "Full Stack Software Developer",
+    "tasks": [
+      "Spearheaded the development of a cloud-based SAAS platform specializing in analyzed acquired ECU and sensor data from automotive systems.",
+      "Architected and implemented a responsive web interface enabling users to visualize and analyze real-time data from onboard ECUs and sensors.",
+      "Designed and integrated robust data acquisition pipelines, ensuring the seamless ingestion of diverse data sources into the cloud platform.",
+      "Implemented advanced analytics features, empowering users to derive insights and make data-driven decisions based on the measured data.",
+      "Guided best practices around inclusive design and accessible, semantic UI.",
+      "Mentored junior developers and helped new hires onboard and succeed."
+    ]
+  },
+  {
+    "company": "Another Company",
+    "period": "Feb 2018 - Present",
+    "role": "Another Role",
+    "tasks": [
+      "Task 1",
+      "Task 2",
+      "Task 3"
+    ]
+  }
+]
