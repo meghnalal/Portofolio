@@ -11,11 +11,12 @@ const Image = () => {
     const anim = gsap.fromTo(
       imageRef.current,
       { autoAlpha: 0, scale: 0.8 },
-      { duration: 2, autoAlpha: 1, scale: 1 },
+      { duration: 1, autoAlpha: 1, scale: 1 },
     );
     ScrollTrigger.create({
       trigger: imageRef.current,
       animation: anim,
+      markers: true,
       toggleActions: "restart none none reset",
     });
   }, []);

@@ -10,7 +10,6 @@ const About = () => {
   const main = useRef();
   useGSAP(
     () => {
-      gsap.to("h2", { duration: 3, text: "this is a to tween" });
       gsap.to("meg", {
         opacity: 0,
         backgroundPositionX: 0,
@@ -18,7 +17,7 @@ const About = () => {
         scrollTrigger: {
           trigger: "meg",
           //markers: true,
-          scrub: 1,
+          scrub: true,
           start: "top center",
           end: "bottom center",
         },
@@ -28,7 +27,10 @@ const About = () => {
   );
   return (
     <div className="h-screen ">
-      <h1 className=" font-broadacre-text pl-8 mb-8 pt-14 text-justify text-xl text-background ">
+      <h1
+        className=" meg font-broadacre-text pl-8 mb-8 pt-14 text-justify text-xl text-background "
+        ref={main}
+      >
         {/* {Hello! I dont like to define myself by the work i've done . I define
         myself by the work I want to do. Skills can be thouht but personality is
         inherent. I prefer to keep learning, continue challenging myself, and do

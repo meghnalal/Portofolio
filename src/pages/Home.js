@@ -1,3 +1,4 @@
+import React, { useRef } from "react";
 import Header from "../components/header";
 import { ReactComponent as ArrayIcon } from "../image/arrow_down.svg";
 import About from "../components/about";
@@ -8,19 +9,24 @@ import Contact from "../components/contact";
 import LogoSlider2 from "../components/slider";
 import Achievements from "../components/achievements";
 import Info from "../components/info";
+import SubSkills from "../components/subskills";
 import HomePagePic from "../components/homepagepic";
 
 function Home() {
+  const iconAboutRef = useRef(null);
+
+  const handleClick = () => {
+    if (iconAboutRef.current) {
+      iconAboutRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="bg-background h-auto flex font-thin flex-col justify-center items-center space-y-24  ">
       <Header />
       <HomePagePic />
       <div className="flex flex-col h-[80vh] sm:h-[50vh] items-center font-mainFont">
         <LogoSlider2 />
-        <h3 className="font-thin text-xl text-text-contrast-green mb-8 ">
-          Versatility -- Innovation -- Industry Insight -- Hard Worker --
-          Continuous Learner
-        </h3>
+        <SubSkills />
       </div>
       <div className="bg-background-third h-auto flex-col w-11/12 flex rounded-xl items-center">
         <div className=" border-b-[1px] border-background">
@@ -54,8 +60,8 @@ function Home() {
             </ul>
           </h2>
           <div className="flex justify-center items-center pb-6 ">
-            <div className=" animate-bounce flex justify-center items-center h-[33px] w-[60px] border-[1px] rounded-2xl fill-background ">
-              <ArrayIcon />
+            <div className="animate-bounce flex justify-center items-center h-[33px] w-[60px] border-[1px] rounded-2xl fill-background hover:cursor-pointer ">
+              <ArrayIcon ref={iconAboutRef} onClick={handleClick} />
             </div>
           </div>
         </div>
