@@ -52,7 +52,7 @@ const About = () => {
         myself by the work I want to do. Skills can be thouht but personality is
         inherent. I prefer to keep learning, continue challenging myself, and do
         interesting things that matter.} */}
-        {about.about}
+        {about.about2}
       </h1>
     </div>
   );

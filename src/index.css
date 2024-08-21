@@ -81,3 +81,8 @@
 .text {
   flex: 1 0 100%;
 }
+
+.custom-indent {
+  padding-left: 2rem; /* Adjust as needed */
+  text-indent: -1.5rem; /* Adjust negative indent to align with bullet */
+}

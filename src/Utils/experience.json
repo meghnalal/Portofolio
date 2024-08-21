@@ -4,12 +4,11 @@
     "period": "Jan 2017 - Present",
     "role": "Full Stack Software Developer",
     "tasks": [
-      "Spearheaded the development of a cloud-based SAAS platform specializing in analyzed acquired ECU and sensor data from automotive systems.",
-      "Architected and implemented a responsive web interface enabling users to visualize and analyze real-time data from onboard ECUs and sensors.",
-      "Designed and integrated robust data acquisition pipelines, ensuring the seamless ingestion of diverse data sources into the cloud platform.",
-      "Implemented advanced analytics features, empowering users to derive insights and make data-driven decisions based on the measured data.",
-      "Guided best practices around inclusive design and accessible, semantic UI.",
-      "Mentored junior developers and helped new hires onboard and succeed."
+      "Developed and maintained Ciara Analytics: Led the development and maintenance of a SaaS tool designed to display car data logs, identify events, and perform comprehensive analyses. The tool provided crucial insights for enhancing vehicle performance and user experience.",
+      "*Front-End Development:* Utilized React to build a dynamic and responsive user interface. Implemented modern front-end technologies, including Tailwind CSS and Redux, to enhance the user experience and streamline state management. Collaborated with UI/UX designers to translate design mockups into functional and interactive features.",
+      "*Back-End Development: Developed robust server-side logic using Python and frameworks such as Django and Flask. Created and managed RESTful APIs to facilitate seamless communication between the front end and back end. Implemented secure authentication and authorization mechanisms to protect user data and ensure secure access.",
+      "*Architectural Contributions: Played a key role in designing and planning the architecture of Ciara Analytics, focusing on scalability, maintainability, and performance. Worked with DevOps teams to implement CI/CD pipelines, containerization with Docker, and cloud deployments, ensuring efficient and reliable delivery of updates and new features.",
+      "Data Analysis and Event Detection: Integrated advanced data analysis functionalities to allow users to identify and analyze significant events from the car data logs. Utilized various data visualization libraries to present data in a clear and insightful manner, enabling users to make data-driven decisions."
     ]
   },
   {

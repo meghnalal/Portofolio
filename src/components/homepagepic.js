@@ -1,4 +1,4 @@
-import meghna from "../image/meghna_lal.png";
+import meghna3 from "../image/meghna_lal.png";
 import meghna1 from "../image/meghnajapan.png";
 import meghna2 from "../image/meghnachile.jpg";
 import React, { useRef, useEffect } from "react";
@@ -48,7 +48,7 @@ const HomePagePic = () => {
   }, []);
 
   return (
-    <div className="static border-2">
+    <div className="">
       <img
         ref={imageRef1}
         className="absolute rounded-xl w-[150px] h-[200px] object-cover text-primary mt-[7%] top-0 left-0"
@@ -56,6 +56,7 @@ const HomePagePic = () => {
         src={meghna2}
         alt="me"
       />
+
       <img
         ref={imageRef2}
         className="absolute rounded-xl w-[150px] h-[150px] object-cover text-primary mt-[25%] bottom-20 right-[10px]"
@@ -65,11 +66,18 @@ const HomePagePic = () => {
       />
       <img
         ref={imageRef3}
-        className="absolute rounded-xl w-[200px] h-[200px] object-cover text-primary mt-[0%] top-0 left-1/2 transform -translate-x-1/2 "
+        className="absolute rounded-xl w-[130px] h-[200px] z-auto  text-primary mt-[0%] top-0 left-1/2 transform -translate-x-1/2 "
+        style={{ transform: "rotate(10deg)" }}
+        src={meghna3}
+        alt="me"
+      />
+      {/* <img
+        ref={imageRef3}
+        className="absolute rounded-xl w-[600px] h-[600px] object-contain text-primary mt-[0%] top-0 left-1/2 transform -translate-x-1/2 "
         style={{ transform: "rotate(10deg)" }}
         src={meghna}
         alt="me"
-      />
+      /> */}
     </div>
   );
 };

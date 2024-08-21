@@ -49,11 +49,14 @@ const Experiences = () => {
     <div className="mb-16" ref={main}>
       {jobs.map((job, index) => (
         <div
-          className="box flex-col w-full pb-2 border-b-[1px] justify-center items-center border-background-third"
-          style={{
-            height: hoverStates[index] ? "300px" : "100px", // Adjust based on your expected maximum content height
-            transitionDuration: hoverStates[index] ? "0.8s" : "0.8s",
-          }}
+          className="flex-col w-full pb-2 border-b-[1px] justify-center duration-800 ease-in-out items-center overflow-hidden border-background-third"
+          // style={{
+          //   height: hoverStates[index] ? "auto" : "100px",
+          //   // transitionDuration: `height 0.8s ${
+          //   //   hoverStates[index] ? "0.8s" : "0.8s"
+          //   // }`,
+          //   transition: `height 0.8s ease-in-out`,
+          // }}
         >
           <div className="w-full justify-center items-center">
             <div className="flex justify-center items-center">
@@ -85,16 +88,27 @@ const Experiences = () => {
             </div>
           </div>
           <div
-            className=" font-broadacre-text overflow-hidden w-full bg-shadow-cream rounded-b-md transition-all duration-500 ease-in-out"
+            className="font-broadacre-text overflow-hidden w-full bg-shadow-cream rounded-b-md "
             style={{
               maxHeight: hoverStates[index] ? "1000px" : "0", // Adjust based on your expected maximum content height
-              transitionDuration: hoverStates[index] ? "0.8s" : "0.5s",
+              transition: "max-height 0.6s ease-in-out",
             }}
           >
-            <ul className="text-background-third p-4">
-              {job.tasks.map((task, i) => (
-                <li key={i}>{task}</li>
-              ))}
+            <ul className="text-background-third text-justify h-auto p-4 pl-4 ">
+              {job.tasks.map((task, index) =>
+                task.startsWith("*") ? (
+                  <li
+                    key={index}
+                    className="custom-indent list-disc mx-10 mb-4 text-wrap list-inside "
+                  >
+                    {task.replace("*", "")}
+                  </li>
+                ) : (
+                  <li key={index} className="mx-4 mb-4 list-none">
+                    {task}
+                  </li>
+                ),
+              )}
             </ul>
           </div>
         </div>
