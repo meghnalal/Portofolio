@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Portofolio/static/css/main.db6efbdd.css",
+    "main.js": "/Portofolio/static/js/main.ed89ef9a.js",
+    "static/js/787.c8a8068c.chunk.js": "/Portofolio/static/js/787.c8a8068c.chunk.js",
+    "static/media/meghnajapan.png": "/Portofolio/static/media/meghnajapan.06cbb59f7f961a37a29b.png",
+    "static/media/meghna_lal.png": "/Portofolio/static/media/meghna_lal.97db8acfc692a82e529a.png",
+    "static/media/meghnachile.jpg": "/Portofolio/static/media/meghnachile.5794b3f4f0569c4a44d5.jpg",
+    "static/media/meghna1.jpg": "/Portofolio/static/media/meghna1.87a34d25dc4420373514.jpg",
+    "static/media/instagram.svg": "/Portofolio/static/media/instagram.86eb73eedf8ce8c9706e493d66cd11ca.svg",
+    "static/media/linkedin.svg": "/Portofolio/static/media/linkedin.585ea9395d27dd255bfd4e773f5eeef8.svg",
+    "static/media/github.svg": "/Portofolio/static/media/github.637306a9825bba3daa9024413b4a46b8.svg",
+    "static/media/twitter.svg": "/Portofolio/static/media/twitter.67557ce953875c5132df615dd33cae8c.svg",
+    "static/media/email.svg": "/Portofolio/static/media/email.a114eac839501306360c69bdb9a1e426.svg",
+    "index.html": "/Portofolio/index.html",
+    "static/media/arrow_down.svg": "/Portofolio/static/media/arrow_down.26d7709847e2c897e95af44c2c2e7541.svg",
+    "main.db6efbdd.css.map": "/Portofolio/static/css/main.db6efbdd.css.map",
+    "main.ed89ef9a.js.map": "/Portofolio/static/js/main.ed89ef9a.js.map",
+    "787.c8a8068c.chunk.js.map": "/Portofolio/static/js/787.c8a8068c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db6efbdd.css",
+    "static/js/main.ed89ef9a.js"
+  ]
+}
