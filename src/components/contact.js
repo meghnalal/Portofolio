@@ -9,7 +9,7 @@ const Contact = () => {
         </h1>
       </div>
       <div className="bg-shadow-cream rounded-xl">
-        <h2 className=" font-broadacre-text text-2xl px-10 text-dim-gray text-left md:text-right">
+        <h2 className=" font-broadacre-text text-xl px-10 py-4 text-dim-gray text-left md:text-right">
           <ul>
             <li>Whether you have an idea for a project or just want to chat</li>
             <li>feel free to shoot me an email!</li>
@@ -20,7 +20,7 @@ const Contact = () => {
             <EmailIcon className=" mb-8 h-8 fill-background-third"></EmailIcon>
             <a
               href="mailto:lalmaggy@gmail.com"
-              className="text-xl flex justify-end text-background-third h-16 font-broadacre-text "
+              className="text-xl flex justify-end font-broadacre-text text-right text-background-third h-16 "
             >
               GET IN TOUCH!
             </a>

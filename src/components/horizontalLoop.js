@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import gsap from "gsap";
 import { Draggable } from "gsap/Draggable";
 
@@ -171,6 +172,7 @@ function horizontalLoop(items, config) {
       (index += index > curIndex ? -length : length); // always go in the shortest direction
     let newIndex = gsap.utils.wrap(0, length, index),
       time = times[newIndex];
+    // eslint-disable-next-line no-mixed-operators
     if (time > tl.time() !== index > curIndex && index !== curIndex) {
       // if we're wrapping the timeline's playhead, make the proper adjustments
       time += tl.duration() * (index > curIndex ? 1 : -1);

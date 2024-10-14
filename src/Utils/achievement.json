@@ -1,0 +1,18 @@
+[
+  {
+    "achievement": "PATENTS",
+    "tasks":"I successfully brought three patented design models into production, demonstrating my ability to deliver innovative, high-impact solutions. These patents include a system for detecting and resolving vehicle stalling on hills in comfort mode, an in-house model for understeering and oversteering detection, and a surface friction detection model—all of which significantly improved vehicle performance and safety in production"
+  },
+  {
+    "achievement": "HIGH IMPACT PROJECT",
+     "tasks":"I conducted a thorough data analysis of the vehicle's control system to identify inefficiencies in the surface friction model. By pinpointing key performance gaps, I developed and implemented an in-house solution within three months. This data-driven model improved vehicle efficiency and delivered significant cost savings for the company "
+  },
+  {
+    "achievement": "NVIDIA INTEGRATION",
+     "tasks":"Within three months of joining the team, I led the NVIDIA software delivery and integration process, creating a streamlined pipeline that allows for remote flashing of ECUs and ensures software quality checks before deployment in vehicles. This process, which I pioneered, is still in use by the company and has been successfully implemented on-board the vECU systems in vehicles"
+  },
+  {
+    "achievement": "LEADERSHIP",
+     "tasks":"I actively mentored new graduates and apprentices, providing training on Jaguar Land Rover (JLR) processes and offering insights into life as an engineer. Passionate about STEM education, I firmly believe in inspiring and guiding the next generation of engineers through hands-on learning and real-world experience "
+  }
+]

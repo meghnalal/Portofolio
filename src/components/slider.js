@@ -6,12 +6,14 @@ import horizontalLoop from "./horizontalLoop";
 gsap.registerPlugin(useGSAP, TextPlugin);
 const LogoSlider2 = () => {
   const containerRef = useRef(null);
+  // eslint-disable-next-line no-unused-vars
   let ctx;
 
   useGSAP(() => {
     const initAnimation = async () => {
       const textElements = Array.from(document.querySelectorAll(".text"));
       ctx = gsap.context(() => {
+        // eslint-disable-next-line no-unused-vars
         const loop = horizontalLoop(textElements, {
           paused: false,
           repeat: -1,

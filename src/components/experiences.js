@@ -23,7 +23,6 @@ const Experiences = () => {
         gsap.to(box, {
           x: 0,
           opacity: 1,
-          //ease: "expo",
           duration: 1,
           immediateRender: false, // otherwise scrollTrigger will force the render right away and the starting values that get locked in would be affected by the from() above
           scrollTrigger: {
@@ -46,18 +45,9 @@ const Experiences = () => {
     });
   };
   return (
-    <div className="mb-16" ref={main}>
+    <div className="mb-8" ref={main}>
       {jobs.map((job, index) => (
-        <div
-          className="flex-col w-full pb-2 border-b-[1px] justify-center duration-800 ease-in-out items-center overflow-hidden border-background-third"
-          // style={{
-          //   height: hoverStates[index] ? "auto" : "100px",
-          //   // transitionDuration: `height 0.8s ${
-          //   //   hoverStates[index] ? "0.8s" : "0.8s"
-          //   // }`,
-          //   transition: `height 0.8s ease-in-out`,
-          // }}
-        >
+        <div className="flex-col w-full pb-2 border-b-[1px] justify-center duration-800 ease-in-out items-center overflow-hidden border-background-third">
           <div className="w-full justify-center items-center">
             <div className="flex justify-center items-center">
               <div className="text-3xl flex w-4/6 text-dim-gray font-broadacre-text">
@@ -109,6 +99,16 @@ const Experiences = () => {
                   </li>
                 ),
               )}
+              <div className="font-broadacre-text text-l text-dim-gray mb-8 text-center mx-auto">
+                {job.skills.map((skill, skillIndex) => (
+                  <span
+                    key={skillIndex}
+                    className="inline-block bg-background text-dim-gray px-4 py-2 rounded-lg mr-[2px] mb-2"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </ul>
           </div>
         </div>
