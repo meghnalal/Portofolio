@@ -1,6 +1,6 @@
 import meghna3 from "../image/meghna_lal.png";
 import meghna1 from "../image/meghnajapan.png";
-import meghna2 from "../image/meghnachile.jpg";
+import meghna4 from "../image/meghnawebsitecar.jpg";
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap"; // <-- import GSAP
 import { ScrollTrigger } from "gsap/ScrollTrigger"; // <-- import the hook from our React package
@@ -48,12 +48,12 @@ const HomePagePic = () => {
   }, []);
 
   return (
-    <div >
+    <div>
       <img
         ref={imageRef1}
-        className="absolute rounded-xl w-[150px] h-[200px] object-cover text-primary mt-[7%] top-0 left-0"
+        className="absolute rounded-xl w-[150px] h-[210px] object-cover text-primary mt-[7%] top-0 left-0"
         style={{ transform: "rotate(-10deg)" }}
-        src={meghna2}
+        src={meghna3}
         alt="me"
       />
 
@@ -66,18 +66,11 @@ const HomePagePic = () => {
       />
       <img
         ref={imageRef3}
-        className="absolute rounded-xl w-[130px] h-[200px] z-auto  text-primary mt-[0%] top-0 left-1/2 transform -translate-x-1/2 "
+        className="absolute rounded-xl w-[290px] h-[210px] z-auto  text-primary mt-[0%] top-0 left-1/2 transform -translate-x-1/2 "
         style={{ transform: "rotate(10deg)" }}
-        src={meghna3}
+        src={meghna4}
         alt="me"
       />
-      {/* <img
-        ref={imageRef3}
-        className="absolute rounded-xl w-[600px] h-[600px] object-contain text-primary mt-[0%] top-0 left-1/2 transform -translate-x-1/2 "
-        style={{ transform: "rotate(10deg)" }}
-        src={meghna}
-        alt="me"
-      /> */}
     </div>
   );
 };
