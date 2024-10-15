@@ -36,7 +36,7 @@ function Home() {
                 <p className="font-broadacre-text text-2xl inline">
                   Full Stack Developer
                 </p>
-                <p className=" font-broadacre text-xl inline">
+                <p className=" font-broadacre text-xl inline px-1">
                   {" "}
                   passionate about turning ideas into powerful tech solutions.
                 </p>
