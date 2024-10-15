@@ -48,7 +48,7 @@ const HomePagePic = () => {
   }, []);
 
   return (
-    <div className="">
+    <div >
       <img
         ref={imageRef1}
         className="absolute rounded-xl w-[150px] h-[200px] object-cover text-primary mt-[7%] top-0 left-0"
