@@ -5,7 +5,7 @@ const SubSkills = () => {
     "INNOVATION",
     "INDUSTRY INSIGHT",
     "HARD WORKER",
-    "CONTINUOS LEARNER ",
+    "CONTINUOUS LEARNER ",
   ];
 
   return (
