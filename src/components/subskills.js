@@ -4,12 +4,12 @@ const SubSkills = () => {
     "VERSATILITY",
     "INNOVATION",
     "INDUSTRY INSIGHT",
-    "HARD WORKER",
+    "DILIGENT",
     "CONTINUOUS LEARNER ",
   ];
 
   return (
-    <div className="h-screen p-16">
+    <div className="flex h-auto items-center justify-center w-full p-16">
       <h3 className="font-broadacre-text text-l text-dim-gray mb-8">
         {skills.map((skill, index) => (
           <span

@@ -47,17 +47,17 @@ const Experiences = () => {
   return (
     <div className="mb-8" ref={main}>
       {jobs.map((job, index) => (
-        <div className="flex-col w-full pb-2 border-b-[1px] justify-center duration-800 ease-in-out items-center overflow-hidden border-background-third">
+        <div className="flex-col w-[430px] sm:w-full pb-2 border-b-[1px] justify-center duration-800 ease-in-out items-center overflow-hidden border-background-third">
           <div className="w-full justify-center items-center">
             <div className="flex justify-center items-center">
-              <div className="text-3xl flex w-4/6 text-dim-gray font-broadacre-text">
+              <div className=" text-l sm:text-3xl flex w-4/6 text-dim-gray font-broadacre-text">
                 {job.company}
               </div>
-              <div className="font-broadacre-text text-xl flex w-2/6 text-dim-gray">
+              <div className="font-broadacre-text text-sm sm:text-xl flex w-2/6 text-dim-gray">
                 {job.period}
               </div>
             </div>
-            <div className="flex items-center font-broadacre-text text-base w-full text-dim-gray">
+            <div className="flex items-center font-broadacre-text text-xs sm:text-base w-full text-dim-gray">
               <p className="w-4/6">{job.role}</p>
               <div className="flex w-1/6 justify-center items-center h-[60px]">
                 <div
@@ -78,10 +78,12 @@ const Experiences = () => {
             </div>
           </div>
           <div
-            className="font-broadacre-text overflow-hidden w-full bg-shadow-cream rounded-b-md "
+            className="font-broadacre-text overflow-hidden w-full max-w-full bg-shadow-cream rounded-b-md"
             style={{
               maxHeight: hoverStates[index] ? "1000px" : "0", // Adjust based on your expected maximum content height
               transition: "max-height 0.6s ease-in-out",
+              maxWidth: "100vw",
+              boxSizing: "border-box",
             }}
           >
             <ul className="text-background-third text-justify h-auto p-4 pl-4 ">
@@ -89,17 +91,20 @@ const Experiences = () => {
                 task.startsWith("*") ? (
                   <li
                     key={index}
-                    className="custom-indent list-disc mx-10 mb-4 text-wrap list-inside "
+                    className="custom-indent list-disc mx-10 mb-4 text-wrap list-inside text-xs sm:text-base "
                   >
                     {task.replace("*", "")}
                   </li>
                 ) : (
-                  <li key={index} className="mx-4 mb-4 list-none">
+                  <li
+                    key={index}
+                    className="mx-4 mb-4 list-none text-xs sm:text-base"
+                  >
                     {task}
                   </li>
                 ),
               )}
-              <div className="font-broadacre-text text-l text-dim-gray mb-8 text-center mx-auto">
+              <div className="font-broadacre-text text-xs sm:text-base text-dim-gray mb-8 text-center mx-auto">
                 {job.skills.map((skill, skillIndex) => (
                   <span
                     key={skillIndex}

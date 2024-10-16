@@ -4,12 +4,12 @@ const Contact = () => {
   return (
     <div className=" h-auto w-full px-20">
       <div className="bg-background h-auto flex-col w-full mt-20 flex rounded-xl bt-20 ">
-        <h1 className="font-broadacre-3 text-8xl pb-14 text-background-third ">
+        <h1 className="font-broadacre-3 text-4xl sm:text-8xl pb-14 text-background-third ">
           Say Hello!
         </h1>
       </div>
       <div className="bg-shadow-cream rounded-xl">
-        <h2 className=" font-broadacre-text text-xl px-10 py-4 text-dim-gray text-left md:text-right">
+        <h2 className=" font-broadacre-text text-xs sm:text-xl px-10 py-4 text-dim-gray text-left md:text-right">
           <ul>
             <li>Whether you have an idea for a project or just want to chat</li>
             <li>feel free to shoot me an email!</li>

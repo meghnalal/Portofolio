@@ -51,7 +51,7 @@ const HomePagePic = () => {
     <div>
       <img
         ref={imageRef1}
-        className="absolute rounded-xl w-[150px] h-[210px] object-cover text-primary mt-[7%] top-0 left-0"
+        className="absolute rounded-xl w-[100px] h-[140px] sm:w-[150px] sm:h-[210px] object-cover text-primary mt-[20%] sm:mt-[7%] top-0 left-0"
         style={{ transform: "rotate(-10deg)" }}
         src={meghna3}
         alt="me"
@@ -59,14 +59,14 @@ const HomePagePic = () => {
 
       <img
         ref={imageRef2}
-        className="absolute rounded-xl w-[150px] h-[150px] object-cover text-primary mt-[25%] bottom-20 right-[10px]"
+        className="absolute rounded-xl w-[120px] h-[120px] sm:w-[150px] sm:h-[150px] object-cover text-primary mt-[25%] sm:mt-[0%] bottom-60 right-[10px]"
         style={{ transform: "rotate(0deg)" }}
         src={meghna1}
         alt="me"
       />
       <img
         ref={imageRef3}
-        className="absolute rounded-xl w-[290px] h-[210px] z-auto  text-primary mt-[0%] top-0 left-1/2 transform -translate-x-1/2 "
+        className="absolute rounded-xl w-[150px] h-[210px] sm:w-[290px] sm:h-[210px] object-cover text-primary mt-[20%] sm:mt-[0%] top-0 left-1/2 transform -translate-x-1/2"
         style={{ transform: "rotate(10deg)" }}
         src={meghna4}
         alt="me"

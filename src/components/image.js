@@ -24,7 +24,7 @@ const Image = () => {
     <div className=" static ">
       <img
         ref={imageRef}
-        className=" absolute rounded-xl w-[300px] h-[500px] mr-[2%] object-cover text-primary mt-[3%]  left-0   "
+        className="absolute rounded-xl w-[150px] h-[250px] sm:w-[300px] sm:h-[500px] mr-[2%] object-cover text-primary mt-[3%] left-0"
         src={meghna}
         alt="me"
       />
