@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Ciara Analyse",
+    "description": "I am currently building a web application at Jaguar Land Rover that displays and analyzes data collected from vehicles. The application is designed to identify and highlight specific events or scenarios, such as brake events or pullaways. My role involves contributing to the development and management of the full front-end and back-end architecture, working collaboratively with my team to ensure seamless functionality and performance.",
+    "milestones": [
+      {
+        "title": "Data collecction",
+        "description": "Data is collected by test engineers from various devices, such as Intrepid loggers, CANape loggers, or Nvidia loggers, on engineering vehicles. Depending on the team's architecture, the collected data is pushed to the cloud, either to GCP or AWS. The data can be in different formats, such as MF4, BLF, or LOG, for further processing and analysis."
+      },
+      {
+        "title": "Ingesting Car Data",
+        "description": "This is where Ciara Analyse inquiries or receives notifications from the cloud databases whenever a new log is present. The system evaluates whether the data meets the necessary requirements to be considered a valid dataset. If the data passes this validation, it is ingested into the system. The ingestion architecture is designed to allow previously invalid files to be re-evaluated and ingested in the future if they become valid, even if they were skipped initially."
+      },
+      {
+        "title": "Data Analysis",
+        "description": "At this stage, data in any format is displayed on the front end in a standardized and uniform way. Users can view signals based on vehicle identification, model, or other metadata. The application supports comparisons across different log types, ensuring they are presented consistently. Advanced search and data analysis features are available, enabling users to perform tasks like comparing an older software version's vehicle behavior on surface friction against that of an updated software version."
+      },
+       {
+        "title": "Event Detection",
+        "description": "One of the biggest challenges engineers face is identifying specific events, such as pullaway, within large datasets or filtered subsets of data. This is where the application excels. By analyzing the data in the cloud, specifically on GCP, the application identifies relevant datasets containing the desired events and highlights how many times those events occur. This capability significantly enhances the efficiency and accuracy of event analysis. More then anything to analyse 100000 datatset takes few seconds vs human analysis would take averag 30 min per log. "
+      }
+    ]
+  },
+  {
+    "title": "Software Delivery: Range Rover, Sport & Defender",
+    "description": "I led the delivery of off-road software for Range Rover, Range Rover Sport, and Defender vehicles. The software, developed in MATLAB Simulink, was tested extensively in diverse environments, including Sweden, Dubai, MIRA, and Moab. Integration into vehicles was achieved using CANape and CREATA for calibration. This software is now featured in 2023 and onward model years.",
+    "milestones": [
+      {
+        "title": "Code Generation",
+        "description": "Our vehicles feature Auto Terrain Response (Auto TR), enabling them to automatically detect the terrain type—such as Grass/Gravel/Snow (GGS), Sand, Comfort, Mud Ruts ,or Rock Crawl —and seamlessly switch to the most suitable driving mode. MATLAB/Simulink was utilized to develop the control logic and algorithms for this functionality. My specific contributions focused on developing models for Rolling Resistance, Surface Friction, Vehicle Stuck Logic, Understeer and Oversteer detection, and the Tire Pressure Monitoring System (TPMS)."
+      },
+      {
+        "title": "Build and Flashing",
+        "description": "The Simulink model, after undergoing Model-in-the-Loop (MIL) and Software-in-the-Loop (SIL) testing, is converted into C code using Embedded Coder. The generated code is then compiled and built into a binary file, typically in HEX format, which is flashed onto the ECU with Canape for deployment."
+      },
+      {
+        "title": "Testing",
+        "description": "The prototype vehicle was tested extensively in diverse environments to validate the software. This included Arctic Circle testing in Sweden for extreme cold, sand testing in Dubai, rock crawl testing in Moab, and mud testing in Wales. Once the software successfully passed all these rigorous tests, it was approved for production and prepared for integration into vehicles during assembly and delivery."
+      },
+      {
+        "title": "Patents",
+        "description": "The algorithms I created and developed for the project have not only gone into production but also resulted in the achievement of three patents due to their innovation. For example, WO2024227674A1 (published on Google Patents) covers an algorithm that detects when a vehicle is stuck and provides a solution for un-sticking it. Additionally, GB2307326.5 for understeer and oversteer detection (approved, but not yet published on Google Patents due to admin delays), and GB2307327.3 for improvements to the Tire Pressure Monitoring System (TPMS) model."
+      }
+    ]
+  },
+  {
+    "title": "Projects in Development",
+    "description": "These are projects ongoing that I am working on to develop my skills and learning.",
+    "milestones": [
+      {
+        "title": "AWS Certified Developer - Associate",
+        "description": "I'm pursuing the AWS Certified Developer - Associate course to deepen my understanding of cloud technologies and enhance my skills in developing, deploying, and managing applications on AWS. By gaining hands-on experience with AWS services, I aim to improve my ability to build scalable, secure, and cost-effective solutions in the cloud. This learning I also apply daily at work since I work on developing a cross cloud application Ciara Analyse "
+      },
+      {
+        "title": "Twitter clone",
+        "description": "I'm building a Twitter clone to learn the best practices for frontend (FE) and backend (BE) development, and to improve my understanding of deploying applications. This project allows me to gain hands-on experience in both aspects, while also benefiting from continuous feedback and reviews from senior colleagues. Through this process, I’m refining my skills in software architecture, performance optimization, and deployment strategies, ultimately working towards creating scalable and efficient applications."
+      },
+      {
+        "title": "React Native Budget App",
+        "description": "I created a React Native Budget App to learn React Native and understand its differences from React. This project helped me explore mobile app development and gain hands-on experience building cross-platform applications."
+      }
+    ]
+  }
+]

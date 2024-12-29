@@ -11,6 +11,7 @@ import Info from "../components/info";
 import SubSkills from "../components/subskills";
 import HomePagePic from "../components/homepagepic";
 import LogoStatic from "../components/slider copy";
+import Project from "../components/project";
 
 function Home() {
   const iconAboutRef = useRef(null);
@@ -25,12 +26,12 @@ function Home() {
       <Header />
       <HomePagePic />
       <div className="flex flex-col pt-24 h-[80vh] sm:h-[50vh] justify-center font-mainFont">
-        <div className="sm:hidden">
+        <div className="flex flex-col items-center pt-32 justify-center h-full text-center text-2xl sm:text-8xl">
           <LogoStatic />
         </div>
-        <div className="hidden sm:block">
+        {/* <div className="hidden sm:block">
           <LogoSlider2 />
-        </div>
+        </div> */}
       </div>
       <SubSkills />
       <div className="bg-background-third h-auto sm:h-auto overflow-scroll sm:overflow-visible flex-col w-11/12 flex rounded-xl items-center">
@@ -84,30 +85,35 @@ function Home() {
         </div>
         {/* <SkillsIcon /> */}
       </div>
-      <section id="experience-section">
-        <div className="flex-col font-mainFont w-11/12 pt-5 px-4  border-background-third sm:mx-auto">
-          <h3 className=" font-broadacre-text text-sm sm:text-xl text-text-contrast-green  ">
-            The companies I worked with
-          </h3>
+
+      <div className="flex-col font-mainFont w-11/12 pt-5 px-4  border-background-third sm:mx-auto">
+        <section id="projects-section">
+          <Project />
+        </section>
+        <h3 className=" font-broadacre-text text-sm sm:text-xl text-text-contrast-green  ">
+          The companies I worked with
+        </h3>
+        <section id="experience-section">
           <h1 className="font-broadacre-3 text-4xl sm:text-8xl pb-14 text-background-third ">
             Experiences
           </h1>
           {/* EXPERIENCE */}\
           <Experiences />
-          {/* DOWNLOAD CV SECTION */}
-          <div className="pb-4 text-center">
-            <a
-              href="/MeghnaLalCVOct.pdf" // Update with the actual path to your CV file
-              download="MeghnaLalCV.pdf" // This is the filename when the user downloads the file
-              className="inline-block font-broadacre-text bg-background-third text-background font-bold py-3 px-6 rounded hover:bg-secondary transition duration-300 ease-in-out"
-            >
-              Download My CV
-            </a>
-          </div>
-          {/* ACHIEVEMENTS */}
-          <Achievements />
+        </section>
+        {/* DOWNLOAD CV SECTION */}
+        <div className="pb-4 text-center">
+          <a
+            href="/MeghnaLalCVOct.pdf" // Update with the actual path to your CV file
+            download="MeghnaLalCV.pdf" // This is the filename when the user downloads the file
+            className="inline-block font-broadacre-text bg-background-third text-background font-bold py-3 px-6 rounded hover:bg-secondary transition duration-300 ease-in-out"
+          >
+            Download My CV
+          </a>
         </div>
-      </section>
+        {/* ACHIEVEMENTS */}
+        <Achievements />
+      </div>
+
       <div>
         <div className="w-screen h-[320px] flex justify-between">
           <div className="w-[100px] h-[400px] rounded-tr-xl bg-background-third"></div>
@@ -117,7 +123,7 @@ function Home() {
           <div className="w-[100px] h-[400px] rounded-tl-xl bg-background-third"></div>
         </div>
 
-        <div className="w-screen h-[400px]  p-2 bg-background-third flex items-end justify-center ">
+        <div className="w-screen h-[400px] p-2 bg-background-third flex items-end justify-center ">
           <Info />
         </div>
       </div>

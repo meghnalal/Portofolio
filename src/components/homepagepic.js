@@ -66,7 +66,7 @@ const HomePagePic = () => {
       />
       <img
         ref={imageRef3}
-        className="absolute rounded-xl w-[150px] h-[210px] sm:w-[290px] sm:h-[210px] object-cover text-primary mt-[20%] sm:mt-[0%] top-0 left-1/2 transform -translate-x-1/2"
+        className="absolute rounded-xl w-[150px] h-[210px] sm:w-[260px] sm:h-[200px] object-cover text-primary mt-[20%] sm:mt-[0%] top-0 left-[45%] transform -translate-x-1/2"
         style={{ transform: "rotate(10deg)" }}
         src={meghna4}
         alt="me"

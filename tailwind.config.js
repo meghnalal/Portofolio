@@ -12,7 +12,8 @@ module.exports = {
         "background-third": "#AD3F3F",
         "indian-red": "#d66061",
         "shadow-cream": "#ebd5bb",
-        "dim-gray": "#685551",
+        // "dim-gray": "#685551",
+        "dim-gray": "#4D3E3D"
       },
       fontFamily: {
         mainFont: ["Genos", "sans-serif"],

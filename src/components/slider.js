@@ -37,7 +37,7 @@ const LogoSlider2 = () => {
   return (
     <main className="main">
       <div className="container" ref={containerRef}>
-        <div className="text text-center font-broadacre-3 text-9xl mb-6 text-background-third">
+        <div className=" text-center font-broadacre-3 text-9xl mb-6 text-background-third">
           Hello!
         </div>
         <div className="text font-broadacre-3 text-9xl mb-6 text-background-third">

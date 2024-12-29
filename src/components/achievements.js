@@ -15,12 +15,31 @@ const Achievements = () => {
               index === 4 ? "" : "border-r-[1px]"
             }`}
           >
-            <p className="mb-2 font-broadacre text-xs sm:text-2xl inline text-left text-background hover:text-accent transition-colors">
-              {item.achievement}
-            </p>
-            <p className="mt-6 mr-2 font-broadacre-text text-right text-xs sm:text-sm text-background-shadow-cream">
-              {item.tasks}
-            </p>
+            {/* Add link conditionally */}
+            {item.link ? ( // Check if `item.link` exists
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <p className="mb-2 font-broadacre text-xs sm:text-2xl inline text-left text-background hover:text-accent transition-colors">
+                  {item.achievement}
+                </p>
+                <p className="mt-6 mr-2 font-broadacre-text text-right text-xs sm:text-sm text-background-shadow-cream">
+                  {item.tasks}
+                </p>
+              </a>
+            ) : (
+              <>
+                <p className="mb-2 font-broadacre text-xs sm:text-2xl inline text-left text-background hover:text-accent transition-colors">
+                  {item.achievement}
+                </p>
+                <p className="mt-6 mr-2 font-broadacre-text text-right text-xs sm:text-sm text-background-shadow-cream">
+                  {item.tasks}
+                </p>
+              </>
+            )}
           </div>
         ))}
       </div>
